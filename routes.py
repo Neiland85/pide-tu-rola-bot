@@ -1,9 +1,9 @@
-k# /mnt/data/routes.py
 
 from flask import request, jsonify
 from models import db, SongRequest, Event
-from run import app
+from __init__ import app
 from marshmallow import Schema, fields
+from flask_wtf.csrf import CSRFProtect
 
 class SongRequestSchema(Schema):
     id = fields.Int(dump_only=True)

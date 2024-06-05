@@ -1,4 +1,3 @@
-# /mnt/data/run.py
 
 from database import init_db
 from __init__ import app
